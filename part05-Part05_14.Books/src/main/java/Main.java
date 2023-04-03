@@ -18,10 +18,20 @@ public class Main {
             System.out.println("Publication year:");
             int publicationYear = Integer.valueOf(scanner.nextLine());
             Book book = new Book(name, publicationYear);
+            for (Book book1 : books) {
+                if (books.contains(book)){
+                    System.out.println("Sorry");
+                    books.remove(book);
+                    break;
+                }
+            }
             books.add(book);
+            
+            
+            
 
         }
-        
+
         // NB! Don't alter the line below!
         System.out.println("Thank you! Books added: " + books.size());
     }

@@ -8,6 +8,7 @@ public class Person {
     private int age;
     private int height;
     private int weight;
+   
 
     public Person(String name, int age, int height, int weight) {
         this.name = name;
@@ -57,6 +58,7 @@ public class Person {
     public String getName() {
         return this.name;
     }
+    
 
     @Override
     public String toString() {

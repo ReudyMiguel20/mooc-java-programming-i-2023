@@ -23,6 +23,7 @@ public class SimpleDate {
         return this.year;
     }
 
+    @Override
     public boolean equals(Object compared) {
         // if the variables are located in the same place, they are the same.
         if (this == compared) {
